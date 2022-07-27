@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image_demo_fragment">
+
+
+    <TextView
+        android:id="@+id/emailDisplayTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/josefin_sans_medium"
+        android:text="@string/fragment_user_your_email_text_view"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/emailPlaceholderTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:text="@string/fragment_user_email_placeholder_text_view"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailDisplayTV"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/viewPasswordBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/fragment_login_edit_text_text_color"
+        android:fontFamily="@font/josefin_sans_medium"
+        android:padding="10dp"
+        android:text="@string/fragment_user_view_password_mat_button"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailPlaceholderTV"
+        app:shapeAppearanceOverlay="@drawable/fab_demo_fragment_shape" />
+
+    <EditText
+        android:id="@+id/updateToolbarET"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/et_demo_fragment_shape"
+        android:fontFamily="@font/josefin_sans_medium"
+        android:hint="@string/fragment_user_update_toolbar_edit_text"
+        android:inputType="text"
+        android:padding="6dp"
+        android:textColorHint="@color/fragment_login_edit_text_text_color"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewPasswordBtn"
+        tools:ignore="Autofill" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/updateToolbarBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="@color/fragment_login_edit_text_text_color"
+        android:fontFamily="@font/josefin_sans_medium"
+        android:padding="10dp"
+        android:text="@string/fragment_user_update_toolbar_mat_button"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/updateToolbarET"
+        app:shapeAppearanceOverlay="@drawable/fab_demo_fragment_shape" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

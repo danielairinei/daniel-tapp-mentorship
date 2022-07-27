@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Mentorship</string>
+    <string name="mentorship_feature_forgot_password_btn_text">Forgot Password</string>
+    <string name="mentorship_feature_to_do_list_btn_text">To Do List</string>
+    <string name="mentorship_feature_weather_widget_btn_text">Weather Widget</string>
+    <string name="mentorship_feature_player_activity_btn_text">Player Activity</string>
+    <string name="mentorship_feature_fragments_demo_btn_text">Fragments Demo</string>
+    <string name="weather_hourly_forecast_textview">View hourly forecast</string>
+    <string name="weather_temperature_textview">18°C</string>
+    <string name="weather_sky_type_cloudy_textview">Cloudy</string>
+    <string name="weather_day_today_textview">Today</string>
+    <string name="player_back_navigation_toast_description">Press the back button one more time to exit the application</string>
+    <string name="fragment_login_email_edit_text">Email</string>
+    <string name="fragment_login_password_edit_text">Password</string>
+    <string name="fragment_login_log_in_text_view">Log In</string>
+    <string name="fragment_user_your_email_text_view">Your email is :</string>
+    <string name="fragment_user_email_placeholder_text_view">email@gmail.com</string>
+    <string name="fragment_user_view_password_mat_button">View Password</string>
+    <string name="fragment_user_update_toolbar_edit_text">Type here the toolbar name</string>
+    <string name="fragment_user_update_toolbar_mat_button">Update Toolbar</string>
+    <string name="fragment_password_your_password_text_view">Your password is :</string>
+    <string name="fragment_password_password_placeholder_text_view">Password</string>
+    <string name="fragment_back_navigation_toast_description">Press one more time to go back</string>
+    <string name="title">To Do List</string>
+    <string name="todo_add_task_edit_text_filler">Add a new task to your to do list</string>
+    <string name="forgot_password_submit_mat_btn">Submit</string>
+    <string name="forgot_password_hint_edit_text">Type your password here</string>
+    <string name="forgot_password_title_text_view">Forgot Password</string>
+</resources>

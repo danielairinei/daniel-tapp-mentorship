@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/forgotPasswordBtn"
+        android:layout_width="@dimen/mentorship_layout_button_size"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/mentorship_feature_forgot_password_btn_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/toDoListBtn"
+        android:layout_width="@dimen/mentorship_layout_button_size"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/mentorship_feature_to_do_list_btn_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/forgotPasswordBtn" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/weatherWidgetBtn"
+        android:layout_width="@dimen/mentorship_layout_button_size"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/mentorship_feature_weather_widget_btn_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toDoListBtn" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/playerActivityBtn"
+        android:layout_width="@dimen/mentorship_layout_button_size"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/mentorship_feature_player_activity_btn_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weatherWidgetBtn" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fragmentsDemoBtn"
+        android:layout_width="@dimen/mentorship_layout_button_size"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/mentorship_feature_fragments_demo_btn_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playerActivityBtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

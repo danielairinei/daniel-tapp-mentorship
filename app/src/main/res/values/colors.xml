@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue_300">#34cceb</color>
+    <color name="weather_widget_text_color">@color/white</color>
+    <color name="gray_300">#999894</color>
+    <color name="gray_100">#c7c7c5</color>
+    <color name="navy_blue">#003478</color>
+    <color name="azure">#008AD8</color>
+    <color name="blue_100">#BEF0F7</color>
+    <color name="blue_200">#96d0d9</color>
+    <color name="fragment_login_edit_text_background_color">@color/gray_300</color>
+    <color name="fragment_login_edit_text_text_color">@color/gray_100</color>
+</resources>
