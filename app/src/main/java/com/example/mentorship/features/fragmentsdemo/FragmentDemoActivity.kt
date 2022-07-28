@@ -18,7 +18,7 @@ class FragmentDemoActivity : AppCompatActivity(), ActionbarListenerFragment {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        manager.beginTransaction().replace(R.id.fragment_container, loginFragment).addToBackStack(null).commit()
+        manager.beginTransaction().replace(R.id.fragment_container, loginFragment).commit()
     }
 
     override fun updateToolbar(newToolbarTextName: String) {
