@@ -26,4 +26,6 @@
     <string name="forgot_password_submit_mat_btn">Submit</string>
     <string name="forgot_password_hint_edit_text">Type your password here</string>
     <string name="forgot_password_title_text_view">Forgot Password</string>
+    <string name="password_change_password_edit_text">Type your new password here</string>
+    <string name="password_submit_mat_button">Submit</string>
 </resources>

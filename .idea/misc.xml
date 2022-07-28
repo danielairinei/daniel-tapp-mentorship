@@ -15,14 +15,19 @@
         <entry key="app/src/main/res/drawable/ic_baseline_create_24.xml" value="0.181" />
         <entry key="app/src/main/res/drawable/ic_baseline_login_24.xml" value="0.181" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.181" />
+        <entry key="app/src/main/res/layout/activity_constraint_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_display_message.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_fragment_demo.xml" value="0.15217391304347827" />
+        <entry key="app/src/main/res/layout/activity_frame_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_linear_layout.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main_player.xml" value="0.15" />
         <entry key="app/src/main/res/layout/activity_player.xml" value="0.15" />
         <entry key="app/src/main/res/layout/activity_todo.xml" value="0.23020833333333332" />
         <entry key="app/src/main/res/layout/activity_weather_widget.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.15217391304347827" />
-        <entry key="app/src/main/res/layout/fragment_password.xml" value="0.15217391304347827" />
+        <entry key="app/src/main/res/layout/fragment_password.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_user.xml" value="0.11195542046605876" />
         <entry key="app/src/main/res/layout/item_textview.xml" value="0.25" />
         <entry key="app/src/main/res/layout/layout_main.xml" value="0.26766304347826086" />
