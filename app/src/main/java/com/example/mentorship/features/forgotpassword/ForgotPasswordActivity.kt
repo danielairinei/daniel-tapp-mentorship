@@ -6,7 +6,9 @@ import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mentorship.R
 import com.google.android.material.button.MaterialButton
-
+//TODO: 1. Leave an empty line between class declaration and first method/field
+//      Also an empty line between first method and fields
+//      2. Remove the empty line at 20
 class ForgotPasswordActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +30,9 @@ class ForgotPasswordActivity : AppCompatActivity() {
     }
 
     companion object {
+        //TODO: We prefer to declare keys as:
+        //      const val KEY_NEW_PASSWORD = "KEY_NEW_PASSWORD"
+        //      It's easier to understand what it is and what it is for
         const val EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE"
     }
 }

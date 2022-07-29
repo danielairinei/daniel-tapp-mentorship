@@ -22,6 +22,8 @@ class UserFragment : Fragment(R.layout.fragment_user) {
             requireActivity().supportFragmentManager.beginTransaction()
                 .setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right)
                 .replace(R.id.fragment_container, passwordFragment)
+                //TODO: Not necessary now, but you should consider adding a name to transactions.
+                //      If for example you want to pop a particular transaction from the back stack, you need a way to find it
                 .addToBackStack(null).commit()
         }
 
@@ -32,7 +34,11 @@ class UserFragment : Fragment(R.layout.fragment_user) {
     }
 
     private fun updateToolbar(newToolBarText: String) {
+        //TODO: Use safe casting and requireActivity
+        //      val actionbarListenerFragment: ActionbarListenerFragment = (requireActivity() as? ActionbarListenerFragment) ?: return
         val actionbarListenerFragment: ActionbarListenerFragment = activity as ActionbarListenerFragment
         actionbarListenerFragment.updateToolbar(newToolBarText)
     }
+
+    //TODO: Create companion object and add the keys and extension function mentioned in LoginFragment
 }

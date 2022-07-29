@@ -12,13 +12,16 @@ import com.example.mentorship.features.todolist.bindingadapters.ListAdapter
 import com.example.mentorship.features.todolist.model.Task
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-
+//TODO: Remove unnecessary empty lines.
+//      Remove unused commented code.
+//      Leave an empty line between class declaration and fields.
+//      Remove unnecessary empty lines at the bottom
 class ToDoListActivity : AppCompatActivity() {
     private var toDoList: ArrayList<Task> = arrayListOf()
     private lateinit var taskAdapter : ListAdapter
     private lateinit var listView: ListView
     private var taskIDCounter: Int = 0
-
+    //TODO: Usually you want to avoid suppressing lint warnings, see if you can fix them first. This one is unnecessary anyway and can be removed
     @SuppressLint("CutPasteId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

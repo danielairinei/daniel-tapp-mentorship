@@ -7,7 +7,7 @@ import com.example.mentorship.features.fragmentsdemo.fragments.ActionbarListener
 import com.example.mentorship.databinding.ActivityFragmentDemoBinding
 import com.example.mentorship.features.fragmentsdemo.fragments.LoginFragment
 import com.example.mentorship.viewBinding
-
+//TODO: I've left some comments in the recyclerview PR for this fragment
 class FragmentDemoActivity : AppCompatActivity(), ActionbarListenerFragment {
 
     private val binding by viewBinding(ActivityFragmentDemoBinding::inflate)

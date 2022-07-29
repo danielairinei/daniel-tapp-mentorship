@@ -53,15 +53,17 @@ class ListAdapter(context: Context, resource: Int, private var toDoList: ArrayLi
     }
 
     private fun modifyTask(taskToModify: TextView?, editText: EditText?, position: Int): CharSequence {
+        //TODO: Avoid using "!!"
         editText!!.visibility = View.VISIBLE
         taskToModify!!.visibility = View.INVISIBLE
         toDoList[position].name = editText.text.toString()
         //onUpdateTaskItemListener?.invoke()
         return editText.text
     }
-
+    //TODO: Declare fields at the top of the class (not always the case, but it is here)
     private var onUpdateTaskItemListener: ((id: Int, newName: String, isChecked: Boolean) -> Unit)? = null
 
+    //TODO: Either remove this unused method and make sure you use it if you forgot about the implementation
     fun setOnUpdateTaskItemListener(onUpdateTaskItemListener: ((id: Int, newName: String, isChecked: Boolean) -> Unit)?) {
         this.onUpdateTaskItemListener = onUpdateTaskItemListener
     }
