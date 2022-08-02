@@ -34,4 +34,6 @@
     <string name="article_name_placeholder_text_view">Article Name #1</string>
     <string name="article_author_placeholder_text_view">Article Author #1</string>
     <string name="article_date_placeholder_text_view">02–08–2022</string>
+    <string name="mentorship_feature_recycler_demo_btn_text">Recycler View Demo</string>
+    <string name="mentorship_feature_multiple_types_recycler_demo_text">Multiple Types</string>
 </resources>

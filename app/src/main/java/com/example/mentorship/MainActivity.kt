@@ -7,6 +7,8 @@ import com.example.mentorship.features.fragmentsdemo.FragmentDemoActivity
 import com.example.mentorship.databinding.ActivityMainBinding
 import com.example.mentorship.features.forgotpassword.ForgotPasswordActivity
 import com.example.mentorship.features.playeractivity.PlayerActivity
+import com.example.mentorship.features.recyclerMultipleTypes.RecyclerMultipleTypesActivity
+import com.example.mentorship.features.recyclerview.RecyclerActivity
 import com.example.mentorship.features.todolist.ToDoListActivity
 import com.example.mentorship.features.weatherwidget.WeatherWidgetActivity
 
@@ -18,24 +20,32 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        binding.forgotPasswordBtn.setOnClickListener{
+        binding.forgotPasswordBtn.setOnClickListener {
             startActivity(Intent(this, ForgotPasswordActivity::class.java))
         }
 
-        binding.toDoListBtn.setOnClickListener{
+        binding.toDoListBtn.setOnClickListener {
             startActivity(Intent(this, ToDoListActivity::class.java))
         }
 
-        binding.weatherWidgetBtn.setOnClickListener{
-            startActivity(Intent(this, WeatherWidgetActivity::class.java ))
+        binding.weatherWidgetBtn.setOnClickListener {
+            startActivity(Intent(this, WeatherWidgetActivity::class.java))
         }
 
-        binding.playerActivityBtn.setOnClickListener{
+        binding.playerActivityBtn.setOnClickListener {
             startActivity(Intent(this, PlayerActivity::class.java))
         }
 
-        binding.fragmentsDemoBtn.setOnClickListener{
+        binding.fragmentsDemoBtn.setOnClickListener {
             startActivity(Intent(this, FragmentDemoActivity::class.java))
+        }
+
+        binding.recyclerDemoBtn.setOnClickListener {
+            startActivity(Intent(this, RecyclerActivity::class.java))
+        }
+
+        binding.recyclerMultipleTypesBtn.setOnClickListener {
+            startActivity(Intent(this, RecyclerMultipleTypesActivity::class.java))
         }
     }
 }
