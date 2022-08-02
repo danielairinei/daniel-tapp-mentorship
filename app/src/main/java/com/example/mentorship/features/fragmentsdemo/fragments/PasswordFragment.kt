@@ -44,5 +44,4 @@ class PasswordFragment : Fragment(R.layout.fragment_password) {
         binding.passwordTV.text = newPassword
         arguments?.putString("password", newPassword)
     }
-
 }

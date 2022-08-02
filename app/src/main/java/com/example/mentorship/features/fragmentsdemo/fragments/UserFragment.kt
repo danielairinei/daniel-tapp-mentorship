@@ -11,9 +11,9 @@ class UserFragment : Fragment(R.layout.fragment_user) {
 
     private val binding by viewBinding(FragmentUserBinding::bind)
     private lateinit var passwordFragment: PasswordFragment
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
 
         binding.emailPlaceholderTV.text = arguments?.getString("email")
         binding.viewPasswordBtn.setOnClickListener {
@@ -32,7 +32,7 @@ class UserFragment : Fragment(R.layout.fragment_user) {
     }
 
     private fun updateToolbar(newToolBarText: String) {
-        val actionbarListenerFragment: ActionbarListenerFragment = activity as ActionbarListenerFragment
+        val actionbarListenerFragment: ActionbarListenerFragment = (requireActivity() as? ActionbarListenerFragment) ?: return
         actionbarListenerFragment.updateToolbar(newToolBarText)
     }
 }

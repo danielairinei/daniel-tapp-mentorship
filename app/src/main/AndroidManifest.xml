@@ -16,7 +16,7 @@
         android:theme="@style/Theme.Mentorship"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".features.recyclerview.RecyclerActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,7 +30,7 @@
         <activity android:name=".features.playeractivity.PlayerActivity" />
         <activity android:name=".features.fragmentsdemo.FragmentDemoActivity" />
         <activity android:name=".features.todolist.ToDoListActivity" />
-        <activity android:name=".features.recyclerview.RecyclerActivity"/>
+<!--        <activity android:name=".features.recyclerview.RecyclerActivity"/>-->
     </application>
 
 </manifest>

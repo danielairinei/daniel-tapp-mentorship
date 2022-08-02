@@ -16,7 +16,7 @@ class PlayerActivity : AppCompatActivity() {
 
     private val binding by viewBinding(ActivityPlayerBinding::inflate)
     private var player: ExoPlayer? = null
-    private var doublePressedToExit : Boolean = false
+    private var doublePressedToExit: Boolean = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
@@ -30,10 +30,9 @@ class PlayerActivity : AppCompatActivity() {
         player?.prepare()
         player?.play()
 
-        binding.backFAB.setOnClickListener{
+        binding.backFAB.setOnClickListener {
             returnToPreviousActivity()
         }
-
     }
 
     override fun onPause() {
@@ -49,17 +48,17 @@ class PlayerActivity : AppCompatActivity() {
         super.onResume()
     }
 
-    private fun returnToPreviousActivity(){
-        finish()
+    private fun returnToPreviousActivity() {
+        onBackPressed()
     }
 
-    override fun onBackPressed(){
-        if(doublePressedToExit){
+    override fun onBackPressed() {
+        if (doublePressedToExit) {
             super.onBackPressed()
             return
         }
         doublePressedToExit = true
-        Toast.makeText(this, R.string.player_back_navigation_toast_description,Toast.LENGTH_LONG).show()
-        Handler(Looper.getMainLooper()).postDelayed({doublePressedToExit = false},2000)
+        Toast.makeText(this, R.string.player_back_navigation_toast_description, Toast.LENGTH_LONG).show()
+        Handler(Looper.getMainLooper()).postDelayed({ doublePressedToExit = false }, 2000)
     }
 }

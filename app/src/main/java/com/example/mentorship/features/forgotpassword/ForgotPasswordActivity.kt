@@ -8,6 +8,7 @@ import com.example.mentorship.R
 import com.google.android.material.button.MaterialButton
 
 class ForgotPasswordActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forgot_password)
@@ -22,12 +23,12 @@ class ForgotPasswordActivity : AppCompatActivity() {
         val editText = findViewById<EditText>(R.id.userInput)
         val message = "Your new password is ${editText.text}"
         val intent = Intent(this, DisplayMessageActivity::class.java).apply {
-            putExtra(EXTRA_MESSAGE, message)
+            putExtra(KEY_NEW_PASSWORD, message)
         }
         startActivity(intent)
     }
 
     companion object {
-        const val EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE"
+        const val KEY_NEW_PASSWORD = "KEY_NEW_PASSWORD"
     }
 }
