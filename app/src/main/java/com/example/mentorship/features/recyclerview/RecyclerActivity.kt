@@ -19,11 +19,24 @@ class RecyclerActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         recyclerAdapter = ArticleAdapter()
-        val recyclerView = binding.listRV
-        recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        val layoutManager = recyclerView.layoutManager as LinearLayoutManager
+        binding.listRV.adapter = recyclerAdapter
+        binding.listRV.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
-        recyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
+        displayFabAfterThirdItem()
+        recyclerAdapter.submitList(getArticles())
+
+        binding.scrollToTopFAB.setOnClickListener {
+            binding.listRV.smoothScrollToPosition(0)
+        }
+    }
+
+    private fun getArticles(): List<Article> =
+        (0..100).map { index -> Article(index, "Article Index $index") }
+
+    private fun displayFabAfterThirdItem() {
+        val layoutManager = binding.listRV.layoutManager as LinearLayoutManager
+
+        binding.listRV.addOnScrollListener(object : RecyclerView.OnScrollListener() {
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                 super.onScrolled(recyclerView, dx, dy)
                 if (layoutManager.findFirstVisibleItemPosition() > 3) {
@@ -35,14 +48,5 @@ class RecyclerActivity : AppCompatActivity() {
                 }
             }
         })
-        recyclerView.adapter = recyclerAdapter
-        recyclerAdapter.submitList(getArticles())
-
-        binding.scrollToTopFAB.setOnClickListener {
-            recyclerView.smoothScrollToPosition(0)
-        }
     }
-
-    private fun getArticles(): List<Article> =
-        (0..100).map { index -> Article(index, "Article Index $index") }
 }
