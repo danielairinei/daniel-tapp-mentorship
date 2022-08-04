@@ -36,4 +36,7 @@
     <string name="article_date_placeholder_text_view">02–08–2022</string>
     <string name="mentorship_feature_recycler_demo_btn_text">Recycler View Demo</string>
     <string name="mentorship_feature_multiple_types_recycler_demo_text">Multiple Types</string>
+    <string name="item_gallery_photo_title_placeholder_text_view">Title 1</string>
+    <string name="item_gallery_photo_year_placeholder_text_view">1999</string>
+    <string name="mentorship_feature_gallery_btn_text">Gallery</string>
 </resources>
