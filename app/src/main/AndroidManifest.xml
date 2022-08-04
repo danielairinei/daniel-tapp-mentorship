@@ -16,7 +16,7 @@
         android:theme="@style/Theme.Mentorship"
         tools:targetApi="31">
         <activity
-            android:name=".features.gallery.GalleryActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,6 +32,7 @@
         <activity android:name=".features.todolist.ToDoListActivity" />
         <activity android:name=".features.recyclerview.RecyclerActivity" />
         <activity android:name=".features.recyclerMultipleTypes.RecyclerMultipleTypesActivity" />
+        <activity android:name=".features.gallery.GalleryActivity"/>
     </application>
 
 </manifest>

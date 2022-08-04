@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.example.mentorship.features.fragmentsdemo.FragmentDemoActivity
 import com.example.mentorship.databinding.ActivityMainBinding
 import com.example.mentorship.features.forgotpassword.ForgotPasswordActivity
+import com.example.mentorship.features.gallery.GalleryActivity
 import com.example.mentorship.features.playeractivity.PlayerActivity
 import com.example.mentorship.features.recyclerMultipleTypes.RecyclerMultipleTypesActivity
 import com.example.mentorship.features.recyclerview.RecyclerActivity
@@ -46,6 +47,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.recyclerMultipleTypesBtn.setOnClickListener {
             startActivity(Intent(this, RecyclerMultipleTypesActivity::class.java))
+        }
+
+        binding.galleryBtn.setOnClickListener {
+            startActivity(Intent(this, GalleryActivity::class.java))
         }
     }
 }
