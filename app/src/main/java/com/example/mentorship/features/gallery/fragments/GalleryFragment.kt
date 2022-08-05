@@ -20,10 +20,10 @@ class GalleryFragment : Fragment(R.layout.fragment_gallery) {
         super.onViewCreated(view, savedInstanceState)
 
         val galleryRvAdapter = PhotoAdapter(::onPhotoClickListener)
-        binding.galleryRV.adapter = galleryRvAdapter
-        binding.galleryRV.layoutManager = GridLayoutManager(parentFragment?.context, 3)
+        binding.root.adapter = galleryRvAdapter
+        binding.root.layoutManager = GridLayoutManager(parentFragment?.context, 3)
 
-        binding.galleryRV.addItemDecoration(PhotoItemDecorator(resources.getDimension(R.dimen.photo_item_decorator_space)))
+        binding.root.addItemDecoration(PhotoItemDecorator(resources.getDimension(R.dimen.photo_item_decorator_space)))
         galleryRvAdapter.submitList(photosList)
     }
 

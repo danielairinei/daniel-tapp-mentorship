@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mentorship.databinding.ActivityRecyclerMultipleTypesBinding
 import com.example.mentorship.viewBinding
-import java.util.*
+import java.util.Calendar
 
 class RecyclerMultipleTypesActivity : AppCompatActivity() {
 
@@ -16,8 +16,8 @@ class RecyclerMultipleTypesActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val recyclerAdapter = GroupedArticlesAdapter()
-        binding.multipleTypesListRV.adapter = recyclerAdapter
-        binding.multipleTypesListRV.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        binding.root.adapter = recyclerAdapter
+        binding.root.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
         recyclerAdapter.submitList(getGroupedArticles())
     }

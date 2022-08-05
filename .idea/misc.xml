@@ -3,18 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Daniel/Desktop/Mentorship/app/src/main/res/layout/activity_display_message.xml" value="0.15416666666666667" />
         <entry key="..\:/Users/Daniel/Desktop/Mentorship/app/src/main/res/layout/activity_fragment_demo.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/Daniel/Desktop/Mentorship/app/src/main/res/layout/activity_gallery.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/Daniel/Desktop/Mentorship/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Daniel/Desktop/Mentorship/app/src/main/res/layout/activity_player.xml" value="0.15416666666666667" />
         <entry key="..\:/Users/Daniel/Desktop/Mentorship/app/src/main/res/layout/activity_recycler.xml" value="0.16" />
         <entry key="..\:/Users/Daniel/Desktop/Mentorship/app/src/main/res/layout/activity_recycler_multiple_types.xml" value="0.1546875" />
         <entry key="..\:/Users/Daniel/Desktop/Mentorship/app/src/main/res/layout/fragment_gallery.xml" value="0.2" />
+        <entry key="..\:/Users/Daniel/Desktop/Mentorship/app/src/main/res/layout/fragment_login.xml" value="0.15416666666666667" />
+        <entry key="..\:/Users/Daniel/Desktop/Mentorship/app/src/main/res/layout/fragment_password.xml" value="0.15416666666666667" />
         <entry key="..\:/Users/Daniel/Desktop/Mentorship/app/src/main/res/layout/fragment_photo_details.xml" value="0.1546875" />
+        <entry key="..\:/Users/Daniel/Desktop/Mentorship/app/src/main/res/layout/fragment_user.xml" value="0.15416666666666667" />
         <entry key="..\:/Users/Daniel/Desktop/Mentorship/app/src/main/res/layout/item_article.xml" value="0.4" />
         <entry key="..\:/Users/Daniel/Desktop/Mentorship/app/src/main/res/layout/item_demo_recycler.xml" value="0.1" />
         <entry key="..\:/Users/Daniel/Desktop/Mentorship/app/src/main/res/layout/item_gallery_photo.xml" value="0.6" />
         <entry key="..\:/Users/Daniel/Desktop/Mentorship/app/src/main/res/layout/item_header_month.xml" value="0.12692307692307692" />
         <entry key="..\:/Users/Daniel/Desktop/Mentorship/app/src/main/res/layout/item_photo.xml" value="0.1546875" />
+        <entry key="..\:/Users/Daniel/Desktop/Mentorship/app/src/main/res/layout/item_textview.xml" value="0.15416666666666667" />
         <entry key="app/src/main/res/drawable/bg_todo_gradient_selector.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/bg_weather_widget.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/et_demo_fragment_shape.xml" value="0.181" />

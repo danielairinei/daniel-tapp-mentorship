@@ -10,12 +10,9 @@ import com.example.mentorship.databinding.ItemHeaderMonthBinding
 class GroupedArticlesAdapter : ListAdapter<GroupedArticlesListItem, GroupedArticlesListViewHolder>(GroupedArticlesDiffUtilItemCallback) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GroupedArticlesListViewHolder {
-        val articleBinding = ItemArticleBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        val monthHeaderBinding = ItemHeaderMonthBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-
         return when (viewType) {
-            TYPE_ARTICLE -> ArticleViewHolder(articleBinding)
-            TYPE_MONTH_HEADER -> MonthHeaderViewHolder(monthHeaderBinding)
+            TYPE_ARTICLE -> ArticleViewHolder(ItemArticleBinding.inflate(LayoutInflater.from(parent.context), parent, false))
+            TYPE_MONTH_HEADER -> MonthHeaderViewHolder(ItemHeaderMonthBinding.inflate(LayoutInflater.from(parent.context), parent, false))
             else -> throw IllegalStateException("Unsupported viewType")
         }
     }

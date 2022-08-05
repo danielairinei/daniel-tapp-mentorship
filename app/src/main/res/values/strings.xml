@@ -14,12 +14,10 @@
     <string name="fragment_login_password_edit_text">Password</string>
     <string name="fragment_login_log_in_text_view">Log In</string>
     <string name="fragment_user_your_email_text_view">Your email is :</string>
-    <string name="fragment_user_email_placeholder_text_view">email@gmail.com</string>
     <string name="fragment_user_view_password_mat_button">View Password</string>
     <string name="fragment_user_update_toolbar_edit_text">Type here the toolbar name</string>
     <string name="fragment_user_update_toolbar_mat_button">Update Toolbar</string>
     <string name="fragment_password_your_password_text_view">Your password is :</string>
-    <string name="fragment_password_password_placeholder_text_view">Password</string>
     <string name="fragment_back_navigation_toast_description">Press one more time to go back</string>
     <string name="title">To Do List</string>
     <string name="todo_add_task_edit_text_filler">Add a new task to your to do list</string>
@@ -29,14 +27,7 @@
     <string name="password_change_password_edit_text">Type your new password here</string>
     <string name="password_submit_mat_button">Submit</string>
     <string name="view_holder_index_text">ViewHolder index %d</string>
-    <string name="article_index_placeholder_text_view">Article Index 1</string>
-    <string name="view_holder_index_placeholder_text_view">ViewHolder Index 1</string>
-    <string name="article_name_placeholder_text_view">Article Name #1</string>
-    <string name="article_author_placeholder_text_view">Article Author #1</string>
-    <string name="article_date_placeholder_text_view">02–08–2022</string>
     <string name="mentorship_feature_recycler_demo_btn_text">Recycler View Demo</string>
     <string name="mentorship_feature_multiple_types_recycler_demo_text">Multiple Types</string>
-    <string name="item_gallery_photo_title_placeholder_text_view">Title 1</string>
-    <string name="item_gallery_photo_year_placeholder_text_view">1999</string>
     <string name="mentorship_feature_gallery_btn_text">Gallery</string>
 </resources>

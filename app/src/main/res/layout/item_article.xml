@@ -3,13 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    tools:ignore="HardcodedText">
 
     <TextView
         android:id="@+id/articleNameTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/article_name_placeholder_text_view"
+        android:text="Article Index 1"
         android:textSize="28sp"
         tools:ignore="MissingConstraints" />
 
@@ -17,20 +18,19 @@
         android:id="@+id/articleAuthorTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/article_author_placeholder_text_view"
+        android:text="Article Author 1"
         android:textSize="22sp"
         app:layout_constraintTop_toBottomOf="@+id/articleNameTV"
-        tools:layout_editor_absoluteX="0dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/articleDateTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/article_date_placeholder_text_view"
+        android:text="05-08-2022"
         android:textSize="18sp"
         app:layout_constraintTop_toBottomOf="@+id/articleAuthorTV"
-        tools:layout_editor_absoluteX="0dp"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
