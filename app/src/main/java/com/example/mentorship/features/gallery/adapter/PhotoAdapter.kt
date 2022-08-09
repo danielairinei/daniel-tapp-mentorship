@@ -11,11 +11,8 @@ typealias OnPhotoClickListener = (photoID: Int) -> Unit
 class PhotoAdapter(private val onPhotoClickListener: OnPhotoClickListener) :
     ListAdapter<PhotoItem, PhotoViewHolder>(PhotoDiffUtilCallback) {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PhotoViewHolder {
-        val binding = ItemPhotoBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-
-        return PhotoViewHolder(binding, onPhotoClickListener)
-    }
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PhotoViewHolder =
+        PhotoViewHolder(ItemPhotoBinding.inflate(LayoutInflater.from(parent.context), parent, false), onPhotoClickListener)
 
     override fun onBindViewHolder(holder: PhotoViewHolder, position: Int) {
         holder.bind(currentList[position])

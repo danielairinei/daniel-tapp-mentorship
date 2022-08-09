@@ -45,14 +45,7 @@ class GalleryFragment : Fragment(R.layout.fragment_gallery) {
 
     private fun onPhotoClickListener(photoID: Int) {
         val photoItem: PhotoItem? = photosList.find { it.id == photoID }
-        val bundle = Bundle()
-
-        bundle.putString("url", photoItem?.url)
-        bundle.putString("title", photoItem?.title)
-        photoItem?.year?.let { bundle.putInt("year", it) }
-
-        val photoFragment = PhotoDetailsFragment()
-        photoFragment.arguments = bundle
+        val photoFragment = PhotoDetailsFragment.newInstance(photoItem)
 
         requireActivity().supportFragmentManager.beginTransaction()
             .setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right)
