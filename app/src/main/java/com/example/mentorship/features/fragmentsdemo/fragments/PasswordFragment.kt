@@ -18,6 +18,11 @@ class PasswordFragment : Fragment(R.layout.fragment_password) {
         super.onViewCreated(view, savedInstanceState)
 
         binding.passwordTV.text = arguments?.getString("password")
+
+        binding.submitNewPasswordBtn.setOnClickListener {
+            val newPassword = binding.changePasswordEt.text.toString()
+            changePassword(newPassword)
+        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,6 +31,7 @@ class PasswordFragment : Fragment(R.layout.fragment_password) {
             override fun handleOnBackPressed() {
                 if (onBackPressed) {
                     parentFragmentManager.popBackStack()
+
                 }
                 onBackPressed = true
                 Toast.makeText(activity, R.string.fragment_back_navigation_toast_description, Toast.LENGTH_SHORT).show()
@@ -33,4 +39,9 @@ class PasswordFragment : Fragment(R.layout.fragment_password) {
         })
     }
 
+    private fun changePassword(newPassword: String) {
+        binding.changePasswordEt.setText("")
+        binding.passwordTV.text = newPassword
+        arguments?.putString("password", newPassword)
+    }
 }

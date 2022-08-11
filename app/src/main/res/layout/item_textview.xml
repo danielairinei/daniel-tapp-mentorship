@@ -35,9 +35,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:fontFamily="@font/rubik_light"
-        android:text="@string/todo_add_task_edit_text_filler"
+        android:text="Add a new task "
         android:textColor="@color/navy_blue"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/editTaskFAB"

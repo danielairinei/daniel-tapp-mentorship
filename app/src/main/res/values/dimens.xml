@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="mentorship_layout_button_size">200dp</dimen>
+    <dimen name="change_password_edit_text">22sp</dimen>
+    <dimen name="photo_item_decorator_space">16dp</dimen>
+    <dimen name="photo_item_image_view_size">130dp</dimen>
 </resources>

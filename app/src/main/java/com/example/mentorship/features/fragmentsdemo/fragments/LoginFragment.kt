@@ -23,7 +23,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
             requireActivity().supportFragmentManager.beginTransaction()
                 .setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right)
                 .replace(R.id.fragment_container, userFragment)
-                .addToBackStack(null).commit()
+                .commit()
         }
     }
 }

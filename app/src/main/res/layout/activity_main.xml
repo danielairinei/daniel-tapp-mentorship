@@ -51,8 +51,38 @@
         android:layout_width="@dimen/mentorship_layout_button_size"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:text="@string/mentorship_feature_fragments_demo_btn_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/playerActivityBtn" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/recyclerDemoBtn"
+        android:layout_width="@dimen/mentorship_layout_button_size"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/mentorship_feature_recycler_demo_btn_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragmentsDemoBtn" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/recyclerMultipleTypesBtn"
+        android:layout_width="@dimen/mentorship_layout_button_size"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/mentorship_feature_multiple_types_recycler_demo_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recyclerDemoBtn" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/galleryBtn"
+        android:layout_width="@dimen/mentorship_layout_button_size"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/mentorship_feature_gallery_btn_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recyclerMultipleTypesBtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

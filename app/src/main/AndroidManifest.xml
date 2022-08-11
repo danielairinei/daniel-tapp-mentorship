@@ -15,7 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mentorship"
         tools:targetApi="31">
-
+        <activity
+            android:name=".CustomViewActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -28,9 +30,12 @@
         <activity android:name=".features.forgotpassword.ForgotPasswordActivity" />
         <activity android:name=".features.forgotpassword.DisplayMessageActivity" />
         <activity android:name=".features.weatherwidget.WeatherWidgetActivity" />
-        <activity android:name=".features.playeractivity.PlayerActivity"/>
-        <activity android:name=".features.fragmentsdemo.FragmentDemoActivity"/>
-        <activity android:name=".features.todolist.ToDoListActivity"/>
+        <activity android:name=".features.playeractivity.PlayerActivity" />
+        <activity android:name=".features.fragmentsdemo.FragmentDemoActivity" />
+        <activity android:name=".features.todolist.ToDoListActivity" />
+        <activity android:name=".features.recyclerview.RecyclerActivity" />
+        <activity android:name=".features.recyclerMultipleTypes.RecyclerMultipleTypesActivity" />
+        <activity android:name=".features.gallery.GalleryActivity" />
     </application>
 
 </manifest>
