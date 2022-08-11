@@ -21,7 +21,7 @@
     <string name="fragment_back_navigation_toast_description">Press one more time to go back</string>
     <string name="title">To Do List</string>
     <string name="todo_add_task_edit_text_filler">Add a new task to your to do list</string>
-    <string name="forgot_password_submit_mat_btn">Submit</string>
+    <string name="submit_mat_btn">Submit</string>
     <string name="forgot_password_hint_edit_text">Type your password here</string>
     <string name="forgot_password_title_text_view">Forgot Password</string>
     <string name="password_change_password_edit_text">Type your new password here</string>
@@ -30,4 +30,6 @@
     <string name="mentorship_feature_recycler_demo_btn_text">Recycler View Demo</string>
     <string name="mentorship_feature_multiple_types_recycler_demo_text">Multiple Types</string>
     <string name="mentorship_feature_gallery_btn_text">Gallery</string>
+    <string name="custom_progress_bar_edit_text_hint">Type percentage to fill the cpb</string>
+    <string name="mentorship_feature_custom_views_btn_text">Custom Views</string>
 </resources>

@@ -85,4 +85,14 @@
         android:text="@string/mentorship_feature_gallery_btn_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/recyclerMultipleTypesBtn" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/customViewBtn"
+        android:layout_width="@dimen/mentorship_layout_button_size"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/mentorship_feature_custom_views_btn_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/galleryBtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

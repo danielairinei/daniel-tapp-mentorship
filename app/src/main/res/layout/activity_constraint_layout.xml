@@ -55,7 +55,7 @@
         android:backgroundTint="#C5B2B2"
         android:fontFamily="@font/bahnschrift_medium"
         android:padding="4dp"
-        android:text="@string/forgot_password_submit_mat_btn"
+        android:text="@string/submit_mat_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

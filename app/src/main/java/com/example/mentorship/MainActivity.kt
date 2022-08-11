@@ -1,11 +1,12 @@
 package com.example.mentorship
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.mentorship.features.fragmentsdemo.FragmentDemoActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.example.mentorship.databinding.ActivityMainBinding
+import com.example.mentorship.features.customview.CustomViewActivity
 import com.example.mentorship.features.forgotpassword.ForgotPasswordActivity
+import com.example.mentorship.features.fragmentsdemo.FragmentDemoActivity
 import com.example.mentorship.features.gallery.GalleryActivity
 import com.example.mentorship.features.playeractivity.PlayerActivity
 import com.example.mentorship.features.recyclerMultipleTypes.RecyclerMultipleTypesActivity
@@ -51,6 +52,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.galleryBtn.setOnClickListener {
             startActivity(Intent(this, GalleryActivity::class.java))
+        }
+
+        binding.customViewBtn.setOnClickListener {
+            startActivity(Intent(this, CustomViewActivity::class.java))
         }
     }
 }
