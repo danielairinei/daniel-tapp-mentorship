@@ -40,5 +40,5 @@
         android:backgroundTint="#C5B2B2"
         android:fontFamily="@font/bahnschrift_medium"
         android:padding="5dp"
-        android:text="@string/forgot_password_submit_mat_btn" />
+        android:text="@string/submit_mat_btn" />
 </FrameLayout>
